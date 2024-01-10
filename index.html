@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="currency_converter">
+
+        <div>
+            <img id="currencyMapPic" src="image_resource/world_map_2013.jpg">
+        </div>
+
+        <div id="currency_converter_text">
+            <h1>
+                Currency Converter
+            </h1>
+        </div>
+
+        <form id="currency_converter_form" onsubmit="return false;">
+            <div id="currency_amount">
+                <label>Amount:</label><br>
+                <input type="number" id="amount_input">
+            </div>
+            <div id="currency_box">
+                <div id="currency_box_from">
+                    <label>From</label><br>
+                    <!-- <button type="button">INR</button> -->
+                    <select id="currency_from">
+                        <option>INR</option>
+                        <option>USD</option>
+                    </select>
+                </div>
+                <img id="exchangeArrowsPic" src="image_resource/exchange-arrows-horizontal-flip.jpg">
+                <div id="currency_box_to">
+                    <label>To</label><br>
+                    <!-- <button type="button">USD</button> -->
+                    <select id="currency_to">
+                        <option>USD</option>
+                        <option>INR</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" id="convert_button" value="Convert">
+            </div>
+            <div id="currency_rate_text">
+                <h4>
+                    Exchange Rate
+                </h4>
+                <h2 id="currency_rate_amount">
+                    INR to USD
+                </h2>
+            </div>
+        </form>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
